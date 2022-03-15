@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -12,8 +16,7 @@ class MyDocument extends Document {
 				<body>
 					<script
 						dangerouslySetInnerHTML={{
-							__html: 
-                            `(function () {
+							__html: `(function () {
                                 function setTheme(newTheme) {
                                   document.body.className = newTheme;
                                   window.__theme = newTheme;
@@ -36,7 +39,7 @@ class MyDocument extends Document {
                                 } catch (err) {}
                                 setTheme(preferredTheme || (darkQuery.matches ? "dark" : "light"));
                               })();
-                            `
+                            `,
 						}}
 					/>
 					<Main />

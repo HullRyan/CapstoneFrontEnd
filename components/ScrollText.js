@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 export default function ScrollText() {
 	return (
 		<div>
@@ -23,7 +27,7 @@ export default function ScrollText() {
 						overflow: hidden;
 						width: 100%;
 						font-size: 1.5rem;
-                        font-weight: bold;
+						font-weight: bold;
 					}
 					.scroll > span {
 						position: absolute;
@@ -46,7 +50,6 @@ export default function ScrollText() {
 						}
 					}
 					.scrollContainer {
-
 					}
 				`}</style>
 			</div>

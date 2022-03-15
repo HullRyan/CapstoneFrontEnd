@@ -1,12 +1,16 @@
-import Search from '../components/Search';
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
+import Search from "../components/Search";
 
 function About() {
-  return (
-    <>
-      <div>About</div>
-      <Search />
-    </>
-  );
+	return (
+		<>
+			<div>About</div>
+			<Search />
+		</>
+	);
 }
 
 export default About;

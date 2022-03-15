@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 import ReactECharts from "echarts-for-react";
 import React, { useEffect, useContext, useState, useRef } from "react";
 import ThemeContext from "./ThemeContext";
@@ -227,7 +231,7 @@ function Chart() {
 				<div className="chart">
 					<button
 						onClick={() => {
-							console.log(echarts_react)
+							console.log(echarts_react);
 						}}
 					>
 						Sunburst

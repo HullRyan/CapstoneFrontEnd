@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 

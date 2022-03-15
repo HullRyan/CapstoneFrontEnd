@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 import Link from "next/link";
 import ToggleTheme from "./ToggleTheme";
 

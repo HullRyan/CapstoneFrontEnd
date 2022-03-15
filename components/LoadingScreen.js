@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Hull <hull.ryanc@gmail.com>
+ */
+
 import ReactECharts from "echarts-for-react";
 import React, { useEffect, useContext, useState, useRef } from "react";
 import * as styles from "../styles/LoadingScreen.module.css";
