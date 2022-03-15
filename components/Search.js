@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as styles from "../styles/Search.module.css";
 
 export default function Search() {
