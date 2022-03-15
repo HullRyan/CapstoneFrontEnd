@@ -1,10 +1,14 @@
 import ReactECharts from "echarts-for-react";
-import React, { useEffect, useContext, useState } from "react";
-import ThemeContext from "./ThemeContext"
+import React, { useEffect, useContext, useState, useRef } from "react";
+import ThemeContext from "./ThemeContext";
 
 function Chart() {
-	var data = JSON.parse(localStorage.getItem("school"));
-	var dataPath = data.children;
+	const echarts_react = useRef(null);
+
+	if (typeof window !== "undefined") {
+		var data = JSON.parse(localStorage.getItem("school"));
+		var dataPath = data.children;
+	}
 
 	const theme = useContext(ThemeContext);
 
@@ -183,36 +187,34 @@ function Chart() {
 				<div className="chart">
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[1]);
+							echarts_react.current.getEchartsInstance().setOption(options[1]);
 						}}
 					>
 						Sunburst
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[2]);
+							echarts_react.current.getEchartsInstance().setOption(options[2]);
 						}}
 					>
 						Tree
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[0]);
+							echarts_react.current.getEchartsInstance().setOption(options[0]);
 						}}
 					>
 						Tree Map
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[3]);
+							echarts_react.current.getEchartsInstance().setOption(options[3]);
 						}}
 					>
 						Pie
 					</button>
 					<ReactECharts
-						ref={(e) => {
-							this.echarts_react = e;
-						}}
+						ref={echarts_react}
 						style={{
 							height: "100%",
 							width: "100%",
@@ -225,36 +227,34 @@ function Chart() {
 				<div className="chart">
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[1]);
+							console.log(echarts_react)
 						}}
 					>
 						Sunburst
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[2]);
+							echarts_react.current.getEchartsInstance().setOption(options[2]);
 						}}
 					>
 						Tree
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[0]);
+							echarts_react.current.getEchartsInstance().setOption(options[0]);
 						}}
 					>
 						Tree Map
 					</button>
 					<button
 						onClick={() => {
-							this.echarts_react.getEchartsInstance().setOption(options[3]);
+							echarts_react.current.getEchartsInstance().setOption(options[3]);
 						}}
 					>
 						Pie
 					</button>
 					<ReactECharts
-						ref={(e) => {
-							this.echarts_react = e;
-						}}
+						ref={echarts_react}
 						style={{
 							height: "100%",
 							width: "100%",

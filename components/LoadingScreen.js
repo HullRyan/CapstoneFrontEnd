@@ -1,22 +1,26 @@
 import ReactECharts from "echarts-for-react";
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
 import * as styles from "../styles/LoadingScreen.module.css";
 import ThemeContext from "./ThemeContext";
 
 function LoadingScreen() {
+	const echarts_react = useRef(null);
+	const echarts_react_dark = useRef(null);
+
 	const [option, setOption] = useState();
 	const { theme } = useContext(ThemeContext);
 	const symbolSize = 300;
 
 	useEffect(() => {
-		console.log(this.echarts_react);
 		let optionIndex = 0;
 		const interval = setInterval(() => {
 			optionIndex = (optionIndex + 1) % options.length;
-			if (this.echarts_react != null)
-				this.echarts_react.getEchartsInstance().setOption(options[optionIndex]);
+			if (echarts_react.current != null)
+				echarts_react.current
+					.getEchartsInstance()
+					.setOption(options[optionIndex]);
 			else
-				this.echarts_react_dark
+				echarts_react_dark.current
 					.getEchartsInstance()
 					.setOption(optionsDark[optionIndex]);
 		}, 1000);
@@ -96,9 +100,7 @@ function LoadingScreen() {
 							height: "175px",
 							width: "100%",
 						}}
-						ref={(g) => {
-							this.echarts_react_dark = g;
-						}}
+						ref={echarts_react_dark}
 						option={optionsDark[0]}
 					/>
 				</div>
@@ -110,9 +112,7 @@ function LoadingScreen() {
 							height: "175px",
 							width: "100%",
 						}}
-						ref={(e) => {
-							this.echarts_react = e;
-						}}
+						ref={echarts_react}
 						option={options[0]}
 					/>
 				</div>
