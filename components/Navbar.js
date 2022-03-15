@@ -4,24 +4,24 @@ import ToggleTheme from "./ToggleTheme";
 export default function Navbar() {
 	return (
 		<div>
-			<div class="header">
-				<span class="title">PROJECT GEMINI</span>
+			<div className="header">
+				<span className="title">PROJECT GEMINI</span>
 				<Link href="/">
-					<a class="header-item">Home</a>
+					<a className="header-item">Home</a>
 				</Link>
 				<Link href="/about">
-					<a class="header-item">About</a>
+					<a className="header-item">About</a>
 				</Link>
 				<Link href="/charts">
-					<a class="header-item">Charts</a>
+					<a className="header-item">Charts</a>
 				</Link>
-				<span class="header-item right">
+				<span className="header-item right">
 					<ToggleTheme />
 				</span>
 			</div>
-			<div class="drop-buttons">
-				<div class="drop-button">Visualize this</div>
-				<div class="drop-button">Visualize this</div>
+			<div className="drop-buttons">
+				<div className="drop-button">Visualize this</div>
+				<div className="drop-button">Visualize this</div>
 			</div>
 		</div>
 	);

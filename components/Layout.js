@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function Layout({ children }) {
 	return (
 		<>
-			<div class="pageContainer">
+			<div className="pageContainer">
 				<Navbar />
 				<main>{children}</main>
 				<Footer />

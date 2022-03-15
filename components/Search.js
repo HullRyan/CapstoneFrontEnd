@@ -11,10 +11,10 @@ export default function Search() {
 
 	return (
 		<>
-			<div class={styles.resultsContainer}>
-				<div class={styles.results}>
-					<div class={styles.searchTerm}>
-						<div class={styles.searchBar}>
+			<div className={styles.resultsContainer}>
+				<div className={styles.results}>
+					<div className={styles.searchTerm}>
+						<div className={styles.searchBar}>
 							<input
 								type="search"
 								placeholder="Search..."
@@ -23,7 +23,7 @@ export default function Search() {
 							/>
 						</div>
 					</div>
-					<div class={styles.searchItems}>
+					<div className={styles.searchItems}>
 						{staff
 							.filter((person) =>
 								JSON.stringify(person)
@@ -32,13 +32,13 @@ export default function Search() {
 							)
 							.map((e) => {
 								return (
-									<div class={styles.item}>
+									<div key={e.id} className={styles.item}>
 										<a href={e.link}>
-											<div class={styles.name}>{e.name}</div>
+											<div className={styles.name}>{e.name}</div>
 										</a>
-										<div class={styles.college}>{e.college}</div>
-										<div class={styles.department}>{e.department}</div>
-										<div class={styles.publications}>
+										<div className={styles.college}>{e.college}</div>
+										<div className={styles.department}>{e.department}</div>
+										<div className={styles.publications}>
 											Publications: {e.academic_interests.length}
 										</div>
 									</div>
