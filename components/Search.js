@@ -4,8 +4,10 @@ import * as styles from "../styles/Search.module.css";
 export default function Search() {
 
 	//Gets staff data from localStorage
-    const staff = JSON.parse(localStorage.getItem("staff"));
-	
+	if (typeof window !== "undefined") {
+    	const staff = JSON.parse(localStorage.getItem("staff"));
+	} 
+
     //React state for search term
     const [searchTerm, setSearchTerm] = useState("");
 
