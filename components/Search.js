@@ -4,9 +4,9 @@ import * as styles from "../styles/Search.module.css";
 export default function Search() {
 
 	//Gets staff data from localStorage
-	if (typeof window !== "undefined") {
-    	const staff = JSON.parse(localStorage.getItem("staff"));
-	} 
+	useEffect(() => {
+		const staff = JSON.parse(localStorage.getItem("staff"));
+	},[])
 
     //React state for search term
     const [searchTerm, setSearchTerm] = useState("");
