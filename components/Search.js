@@ -32,9 +32,9 @@ export default function Search() {
 									.toLowerCase()
 									.includes(searchTerm.toLowerCase())
 							)
-							.map((e) => {
+							.map((e, i) => {
 								return (
-									<div key={e.id} className={styles.item}>
+									<div key={i} className={styles.item}>
 										<a href={e.link}>
 											<div className={styles.name}>{e.name}</div>
 										</a>

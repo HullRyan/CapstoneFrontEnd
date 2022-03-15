@@ -6,7 +6,7 @@ import { ThemeProvider } from "../components/ThemeContext";
 
 function App({ Component, pageProps }) {
 	//State to hold if Staff and School JSONs are loaded
-	const [loaded, setLoaded] = useState(true);
+	const [loaded, setLoaded] = useState(false);
 
 	//Check to see if School and Staff data is fetched and available in localStorage on initial load into app
 	useEffect(() => {
