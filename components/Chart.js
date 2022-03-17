@@ -231,7 +231,7 @@ function Chart() {
 				<div className="chart">
 					<button
 						onClick={() => {
-							console.log(echarts_react);
+							echarts_react.current.getEchartsInstance().setOption(options[1]);
 						}}
 					>
 						Sunburst
