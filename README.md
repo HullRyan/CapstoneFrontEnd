@@ -1,4 +1,7 @@
-# Frameworks and dependencies
+# ITSC 4155 - Capstone Project
+# UNC Charlotte Connections - Scraping and Data vis
+
+## Frameworks and dependencies
 
 - Next.js
 - Echarts
@@ -7,7 +10,9 @@
 
 ## Getting Started
 
-First, run the development server:
+- View deployed on Vercel [here](capstone-front-end-lime.vercel.app) 
+
+- To run on your device, clone repo and run the development server:
 
 ```bash
 npm run dev
@@ -16,4 +21,5 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
+
 
