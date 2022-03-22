@@ -121,9 +121,6 @@ function Chart() {
 					},
 					universalTransition: true,
 					id: "pie",
-					emphasis: {
-						focus: "self",
-					},
 					label: {},
 					/*encode: {
           itemName: "College Name",
