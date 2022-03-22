@@ -218,10 +218,10 @@ function Chart() {
 							best enjoyed in a larger experience
 						</div>
 						<div className="buttons">
+							<div className="continue">Ignore Warnings</div>
 							<Link href="/data">
 								<a className="data">View Data Page</a>
 							</Link>
-							<div className="continue">Ignore Warnings</div>
 						</div>
 					</div>
 				</div>

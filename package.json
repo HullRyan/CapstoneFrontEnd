@@ -1,4 +1,9 @@
 {
+  "name": "capstone-front-end",
+  "version": "1.0.0",
+  "description": "UNC Charlotte - ITSC 4155 - Capstone Group Project front end, desogned by Ryan Hull",
+  "author": "Ryan Hull",
+  "license": "mit",
   "private": true,
   "scripts": {
     "dev": "next dev",
