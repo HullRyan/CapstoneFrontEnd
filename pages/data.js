@@ -1,16 +1,13 @@
 /**
  * @author Ryan Hull <hull.ryanc@gmail.com>
+ * @author Murtadha Marzouq <mmarzouq@uncc.edu>
  */
-
 import Search from "../components/Search";
 
-function About() {
+export default function Data() {
 	return (
 		<>
-			<div>About</div>
 			<Search />
 		</>
 	);
 }
-
-export default About;

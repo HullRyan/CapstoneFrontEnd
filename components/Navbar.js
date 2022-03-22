@@ -13,8 +13,8 @@ export default function Navbar() {
 				<Link href="/">
 					<a className="header-item">Home</a>
 				</Link>
-				<Link href="/about">
-					<a className="header-item">About</a>
+				<Link href="/data">
+					<a className="header-item">Data</a>
 				</Link>
 				<Link href="/charts">
 					<a className="header-item">Charts</a>
@@ -22,10 +22,6 @@ export default function Navbar() {
 				<span className="header-item right">
 					<ToggleTheme />
 				</span>
-			</div>
-			<div className="drop-buttons">
-				<div className="drop-button">Visualize this</div>
-				<div className="drop-button">Visualize this</div>
 			</div>
 		</div>
 	);

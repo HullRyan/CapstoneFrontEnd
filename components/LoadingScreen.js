@@ -95,9 +95,9 @@ function LoadingScreen() {
 	];
 
 	return (
-		<div className="chart">
+		<div>
 			{theme === "dark" ? (
-				<div className="chart">
+				<div>
 					<div className="charlotteDark">WE ARE</div>
 					<ReactECharts
 						style={{
@@ -109,7 +109,7 @@ function LoadingScreen() {
 					/>
 				</div>
 			) : (
-				<div className="chart">
+				<div>
 					<div className="charlotte">WE ARE</div>
 					<ReactECharts
 						style={{

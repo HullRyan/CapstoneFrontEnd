@@ -42,9 +42,6 @@ body {
 	margin: 0;
 	margin-top: -16px;
 }
-.chart {
-	height: 90%;
-}
 
 a {
 	color: inherit;
@@ -64,6 +61,11 @@ body {
 	font-family: "Open Sans", sans-serif;
 	background-color: var(--color-secondary);
 	color: var(--color-primary);
+}
+.charts-container { 
+	height: 100%;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 .pageContainer {
 	height: 100vh;
@@ -142,6 +144,21 @@ input:checked + .slider {
 .container {
 	margin: 1rem;
 }
+
+@media screen and (min-width: 900px) {
+	.container {
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.container {
+		margin-left: 20rem;
+		margin-right: 20rem;
+	}
+}
+
 .button {
 	width: 110px;
 	height: 30px;
@@ -255,12 +272,7 @@ input:checked + .slider {
 .footer {
 	justify-self: flex-end;
 }
-.results-container {
-	justify-content: center;
-	display: flex;
-	flex-direction: row;
-	color: var(--color-green);
-}
+
 .toggles {
 	margin: 1rem;
 	margin-top: 2rem;
@@ -279,6 +291,9 @@ input:checked + .slider {
 }
 .hidden {
 	visibility: hidden;
+}
+.chart { 
+	height: 85%;
 }
 .drop-buttons {
 	display: flex;
