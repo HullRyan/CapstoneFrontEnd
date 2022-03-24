@@ -22,6 +22,13 @@ export default function Home() {
 				Murtadha was born in Damascus, Syria and has been in the United States for 10 years.</div>
 				<img src="Murtadha_Marzouq.png" alt="Abu" width="500" height="333"></img>
 			</div>
+			<style jsx>
+				{`
+				.team {
+					background-color: black;
+				}
+				`}
+				</style>
 		</div>
 	);
 }
