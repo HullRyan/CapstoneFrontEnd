@@ -21,7 +21,7 @@ function App({ Component, pageProps }) {
 					"https://raw.githubusercontent.com/HullRyan/test_data/main/school_newest.json"
 				),
 				fetch(
-					"https://raw.githubusercontent.com/HullRyan/test_data/main/staff-min.json"
+					"https://raw.githubusercontent.com/HullRyan/test_data/main/StaffWithScholarData.json"
 				),
 			])
 				//Convert to JSON
