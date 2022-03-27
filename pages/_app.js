@@ -14,7 +14,7 @@ function App({ Component, pageProps }) {
 
 	//Check to see if School and Staff data is fetched and available in localStorage on initial load into app
 	useEffect(() => {
-		if (localStorage.getItem("staff") == null) {
+		if (localStorage.getItem("staffWithScholar") == null) {
 			//Fetch both files that are used in project
 			Promise.all([
 				fetch(
@@ -30,7 +30,7 @@ function App({ Component, pageProps }) {
 					console.log(school, staff);
 					//Store objects in localStorage for use in components
 					localStorage.setItem("school", JSON.stringify(school));
-					localStorage.setItem("staff", JSON.stringify(staff));
+					localStorage.setItem("staffWithScholar", JSON.stringify(staff));
 					setLoaded(true);
 				});
 		} else setLoaded(true);

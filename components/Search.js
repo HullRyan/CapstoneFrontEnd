@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Search() {
 	//Gets staff data from localStorage
-	const staff = JSON.parse(localStorage.getItem("staff"));
+	const staff = JSON.parse(localStorage.getItem("staffWithScholar"));
 
 	//React state for filtered staff
 	const [searchTerm, setSearchTerm] = useState("");
