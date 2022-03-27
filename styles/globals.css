@@ -36,7 +36,6 @@
 	--color-green: rgb(0, 80, 53);
 	--font-color: #ffffff;
 }
-
 body {
 	background-color: var(--color-primary);
 	margin: 0;

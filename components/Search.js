@@ -16,6 +16,15 @@ export default function Search() {
 	const [showModal, setShowModal] = useState(false);
 	//React state for modal data
 	const [activeObject, setActiveObject] = useState(null);
+	
+	function getResultConatinerClass(e) {
+		if(activeObject != null) {
+			return e.name === activeObject.e.name
+			? "resultContainer-active"
+			: "resultContainer-inactive";
+		}
+		return "resultContainer-inactive";
+	}
 
 	function getClass() {
 		return showModal === true
@@ -86,7 +95,7 @@ export default function Search() {
 					<div>
 						<div className="button-holder">
 							<button
-								onClick={() => setShowModal(false)}
+								onClick={() => setShowModal(false) && setActiveObject(null)}
 								className="close"
 							></button>
 						</div>
@@ -158,7 +167,7 @@ export default function Search() {
 					<div>
 						<div className="button-holder">
 							<button
-								onClick={() => setShowModal(false)}
+								onClick={() => setShowModal(false) && setActiveObject(null)}
 								className="close"
 							></button>
 						</div>
@@ -193,7 +202,7 @@ export default function Search() {
 					<div>Interests</div>
 				</div>
 				<div className="results-container labels big-screen">
-					<div className="resultContainer">
+					<div className={'resultContainer'}>
 						<div className="personContainer">
 							<div>Name</div>
 							<div>College</div>
@@ -213,9 +222,9 @@ export default function Search() {
 							return (
 								<div
 									key={i}
-									className="resultContainer"
+									className={"resultContainer " + getResultConatinerClass(e)}
 									onClick={() => {
-										setActiveObject({ e });
+										setActiveObject({e});
 										setShowModal(true);
 									}}
 								>
@@ -254,6 +263,9 @@ export default function Search() {
 			</div>
 			<style jsx global>
 				{`
+					.resultContainer-active {
+						background-color: rgb(0, 80, 53, .2);
+					}
 					.big-name {
 						font-size: 1.4rem;
 						font-weight: 600;
@@ -306,18 +318,20 @@ export default function Search() {
 					}
 					.modal-image-big img {
 						height: 14rem;
-						border-radius: 10px;
+						border-radius: .2rem;
 						border: 1px solid #ccc;
 					}
 					.modal-image img {
 						height: 7rem;
 						max-width: 7rem;
-						border-radius: 10px;
+						border-radius: .2rem;
 						border: 1px solid #ccc;
 						object-fit: cover;
 					}
 					.logo {
 						display: flex;
+						align-items: center;
+						justify-content: center;
 					}
 					.modal-box {
 						overflow: auto;
@@ -367,7 +381,6 @@ export default function Search() {
 					.results-container {
 						transition: 0.5s;
 						overflow: auto;
-						padding-left: 1rem;
 					}
 					.active {
 						max-height: 200px;
@@ -397,12 +410,18 @@ export default function Search() {
 					}
 					.resultContainer {
 						display: flex;
-						width: 100%;
+						justify-content: space-between;
+						width: calc(100% - 2rem);
 						padding-top: 0.5rem;
 						padding-bottom: 0.5rem;
+						padding-left: 1rem;
+						padding-right: 1rem;
+					}
+					.resultContainer:active {
+						background: rgb(0, 80, 53, .4);
 					}
 					.personContainer {
-						width: 85%;
+						width: calc(85% - 2rem);
 						display: flex;
 						flex-direction: column;
 					}
@@ -425,6 +444,14 @@ export default function Search() {
 					}
 					.big-screen {
 						display: none;
+					}
+					@media screen and (min-height: 930px) {
+						.active {
+							max-height: 300px;
+						}
+						.inactive {
+							max-height: 400px;
+						}
 					}
 					@media screen and (min-width: 825px) {
 						.personContainer {
@@ -456,17 +483,17 @@ export default function Search() {
 						height: 2em;
 						border-radius: 50%;
 						background: transparent;
-						color: #1da1f2;
+						color: rgb(0, 80, 53);
 						font: inherit;
 						text-indent: 100%;
 						cursor: pointer;
 					}
 					.close:focus {
 						outline: solid 0 transparent;
-						box-shadow: 0 0 0 2px #8ed0f9;
+						box-shadow: 0 0 0 2px rgb(0, 80, 53);
 					}
 					.close:hover {
-						background: rgba(29, 161, 142, 0.1);
+						background: rgba(0, 80, 53, 0.1);
 					}
 					.close:before,
 					.close:after {
