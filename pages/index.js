@@ -48,6 +48,50 @@ export default function Home() {
 					years.
 				</div>
 
+				<br></br>
+				<br></br>
+
+				<div>
+					<strong>Miguel Morel</strong> is a Software Enthusiast with over 4 years of experience in the Software Development scene. 
+					Miguel transferred from Central Piedmont Community College to the University of North Carolina at Charlotte (UNCC) for the last two years of his degree. 
+					He majors in Computer Science with a concentration in Software Engineering and is graduating in July 2021. 
+					He is a skilled Software Developer with considerable skill in languages such as Java, C++, Python, JavaScript and SQL, to name a few. 
+					In his spare time, Miguel enjoys playing soccer and learning about emerging technologies and gadgets.
+				</div>
+				<br></br>
+				<div>
+					<strong>Links: </strong>
+					https://www.linkedin.com/in/miguelmorel94/<br></br>
+					https://github.com/mmorel1
+				</div>
+
+				<br></br>
+				<br></br>
+				
+				<div>
+					<strong>Ryan Hull</strong> is a Senior graduating in May here at UNC Charlotte, with a BS in Computer Science,  concentrating in Software, Systems & Networks. 
+					While born in Rochester, NY, Ryan has lived in Charlotte for most of his life and calls it home. H
+					aving experience in many technologies, from C++, Java to Web Development (JavaScript, Angular, React, etc.), 
+					Ryan never passes up the opportunity to learn something new and expand his experience. 
+				</div>
+				
+				<br></br>
+				<br></br>
+
+				<div>
+					<strong>Willis Reid</strong>, I am currently a student at the University of North Carolina at Charlotte. 
+					Some of the things I've done are graduated from Catawba Valley Community College with an associate degree. 
+					I have six years of experience working in customer service. Over the years, I have improved my problem-solving and critical thinking skills. 
+					I have also been studying IT for about five years now. I have experience with Python, HTML, and CSS.
+				</div>
+
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+
+
+
 				<style jsx>
 					{`
 						.team {
