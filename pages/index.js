@@ -15,7 +15,11 @@ export default function Home() {
 			</div>
 			<div className="container">
 				<div className="big title accent">Behind the scenes:</div>
-				<div>(Backend work + front end work display here)</div>
+				<div>
+					Ryan & Seth worked on the front end of the assignment making sure everything looked clean and precise. The charts that Ryan implemented 
+					really gave the data pages what they needed, and really captures everyones eyes. Murtadha was repsonsible for making sure the data was scraped and given to Ryan and I.
+					We used a vanilla JavaScript so we had no front end libraries. We used a json file that is located in github for the information to be retrieved.
+				</div>
 				<div className="big title accent">Meet the team:</div>
 				<img
 					src="./TeamPhotos/Murtadha_Marzouq.png"
