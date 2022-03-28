@@ -19,6 +19,9 @@ export default function Home() {
 					Ryan & Seth worked on the front end of the assignment making sure everything looked clean and precise. The charts that Ryan implemented 
 					really gave the data pages what they needed, and really captures everyones eyes. Murtadha was repsonsible for making sure the data was scraped and given to Ryan and I.
 					We used a vanilla JavaScript so we had no front end libraries. We used a json file that is located in github for the information to be retrieved.
+					<br></br>
+					Willis and Miguel worked on the backend of the project and created a document explaining everything we did, our user stories, and created some nice diagrams for the 
+					class to look off of. With their explanation of every little detail, they really allowed even the more novice of coders to understand what we were trying to implement.
 				</div>
 				<div className="big title accent">Meet the team:</div>
 				<img
