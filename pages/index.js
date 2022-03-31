@@ -23,7 +23,7 @@ export default function Home() {
 					Willis and Miguel worked on the backend of the project and created a document explaining everything we did, our user stories, and created some nice diagrams for the 
 					class to look off of. With their explanation of every little detail, they really allowed even the more novice of coders to understand what we were trying to implement.
 				</div>
-				<div className="big title accent">Meet the team:</div>
+				<div className="big title accent">Meet the team</div> 
 				<img
 					src="./TeamPhotos/Murtadha_Marzouq.png"
 					alt="Abu"
