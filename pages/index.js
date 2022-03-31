@@ -105,7 +105,7 @@ export default function Home() {
 				<br></br>
 
 				<Image
-					src="/TeamPhotos/Ryan_hull.jpeg"
+					src="/TeamPhotos/Ryan_Hull.jpeg"
 					alt="ryan"
 					width="150"
 					height="150"
