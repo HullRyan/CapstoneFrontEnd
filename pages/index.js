@@ -43,6 +43,12 @@ export default function Home() {
 				</div>
 				<br></br>
 				<br></br>
+				<img
+					src="./TeamPhotos/seth_adams.jpg"
+					alt="Seth"
+					width="150"
+					height="150"
+				></img>
 				<div>
 					<strong>Seth Adams</strong> has been studying IT for over 6 years from
 					late high school to the present. Seth is working towards his degree in
@@ -57,7 +63,12 @@ export default function Home() {
 
 				<br></br>
 				<br></br>
-
+				<img
+					src="./TeamPhotos/miguel.png"
+					alt="miguel"
+					width="150"
+					height="150"
+				></img>
 				<div>
 					<strong>Miguel Morel</strong> is a Software Enthusiast with over 4 years of experience in the Software Development scene. 
 					Miguel transferred from Central Piedmont Community College to the University of North Carolina at Charlotte (UNCC) for the last two years of his degree. 
@@ -67,7 +78,8 @@ export default function Home() {
 				</div>
 				<br></br>
 				<div>
-					<strong>Links: </strong>
+					<strong>Miguel's Links:</strong>
+					<br></br>
 					https://www.linkedin.com/in/miguelmorel94/<br></br>
 					https://github.com/mmorel1
 				</div>
@@ -75,6 +87,12 @@ export default function Home() {
 				<br></br>
 				<br></br>
 				
+				<img
+					src="./TeamPhotos/Ryan_hull.jpeg"
+					alt="ryan"
+					width="150"
+					height="150"
+				></img>
 				<div>
 					<strong>Ryan Hull</strong> is a Senior graduating in May here at UNC Charlotte, with a BS in Computer Science,  concentrating in Software, Systems & Networks. 
 					While born in Rochester, NY, Ryan has lived in Charlotte for most of his life and calls it home. H
@@ -84,7 +102,12 @@ export default function Home() {
 				
 				<br></br>
 				<br></br>
-
+				<img
+					src="./TeamPhotos/willis.jpg"
+					alt="willis"
+					width="150"
+					height="150"
+				></img>
 				<div>
 					<strong>Willis Reid</strong>, I am currently a student at the University of North Carolina at Charlotte. 
 					Some of the things I've done are graduated from Catawba Valley Community College with an associate degree. 
