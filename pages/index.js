@@ -90,6 +90,11 @@ export default function Home() {
 							Apache web server. Murtadha was born in Damascus, Syria and has
 							been in the United States for 10 years.
 						</div>
+						<div className="links">
+							<a href="https://github.com/MurtadhaM">
+								<BsGithub size={32} />
+							</a>
+						</div>
 					</div>
 
 					<div className="team-member">
@@ -133,16 +138,13 @@ export default function Home() {
 							name a few. In his spare time, Miguel enjoys playing soccer and
 							learning about emerging technologies and gadgets.
 						</div>
-						<div>
-							<br></br>
+						<div className="links">
 							<a href="https://github.com/mmorel1">
 								<BsGithub size={32} />
 							</a>
 							<a href="https://www.linkedin.com/in/miguelmorel94/">
 								<BsLinkedin size={32} />
 							</a>
-							<br></br>
-							
 						</div>
 					</div>
 
@@ -166,6 +168,8 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+				<br></br>
+				<br></br>
 
 				<style jsx>
 					{`
