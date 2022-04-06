@@ -134,10 +134,15 @@ export default function Home() {
 							learning about emerging technologies and gadgets.
 						</div>
 						<div>
-							<strong>Miguel&apos;s Links:</strong>
 							<br></br>
-							https://www.linkedin.com/in/miguelmorel94/<br></br>
-							https://github.com/mmorel1
+							<a href="https://github.com/mmorel1">
+								<BsGithub size={32} />
+							</a>
+							<a href="https://www.linkedin.com/in/miguelmorel94/">
+								<BsLinkedin size={32} />
+							</a>
+							<br></br>
+							
 						</div>
 					</div>
 
