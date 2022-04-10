@@ -10,8 +10,28 @@
 
  export default function Home(){
      return(
-         <div>
-             
-         </div>   
+        <div>
+            <div className="container">
+                <img
+                    src="/DocumentPhotos/Project Gemini Report-1 (1)1024_1.jpg"
+                    alt="Page1"
+                ></img>
+            </div>
+
+            <style jsx>
+					{`
+						.container {
+                            height: 759px;
+                            width: 800px;
+                            overflow: scroll;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        
+                        
+					`}
+				</style>
+        </div>         
      );
  }
