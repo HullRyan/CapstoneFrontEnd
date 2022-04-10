@@ -19,6 +19,9 @@ export default function Navbar() {
 				<Link href="/charts">
 					<a className="header-item">Charts</a>
 				</Link>
+				<Link href="/document">
+					<a className="header-item">Back-End</a>
+				</Link>
 				<span className="header-item right">
 					<ToggleTheme />
 				</span>
