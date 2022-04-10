@@ -10,6 +10,8 @@
 
  export default function Home(){
      return(
-        <div>Test</div>
+         <div>
+             
+         </div>   
      );
  }
