@@ -8,6 +8,7 @@ import Scroll from "../components/ScrollText";
 import LoadingScreen from "../components/LoadingScreen";
 import Image from "next/image";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -19,6 +20,9 @@ export default function Home() {
 				<div className="big title accent">
 					<u>Behind the scenes</u>
 				</div>
+				<Link href="/document">
+					<a className="big header-item title">View Back-End Document</a>
+				</Link>
 				<div>
 					Ryan implemented the front end of the assignment, from designing the
 					pages to the implementation of features and functionality. Ryan also

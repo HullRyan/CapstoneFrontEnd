@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /**
  * @author Ryan Hull <hull.ryanc@gmail.com>
  * @author Seth Adams <sadams65@uncc.edu>
@@ -11,7 +12,7 @@
  export default function Home(){
      return(
         <div>
-            <div className="container">
+            <div className="backend-container">
                 <img
                     src="/DocumentPhotos/Project Gemini Report-1 (1)1024_1.jpg"
                     alt="Page1"
@@ -113,20 +114,28 @@
 
             <style jsx>
 					{`
-						.container {
-                            height: 759px;
-                            width: 800px;
-                            overflow: scroll;
+						.backend-container {
+                            height: 80%;
+                            max-height: 1024px;
+                            width: 80%;
+                            max-width: 791px;
+                            overflow: auto;
                             display: block;
                             margin-left: auto;
                             margin-right: auto;
                             border: 8px solid black;
                             border-radius: 5px;
+                            aspect-ratio: 791 / 1024;
                         }
-                        
+                        .backend-container img {
+                            width: 100%;
+                            object-fit: contain;
+                        }
                         .text {
-                            font-size: 15px;
-                            
+                            display: flex;
+                            justifu-content: center;
+                            align-items: center;
+                            justify-content: center;
                         }
 					`}
 				</style>
