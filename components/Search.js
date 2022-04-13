@@ -9,8 +9,8 @@ import Image from "next/image";
 export default function Search() {
 
 	/**
-	 * Get the staff with the scholar tag.
-	 * @returns {Staff[]} - The staff with the scholar tag.
+	 * Get the staff with the scholar tag from local storage.
+	 * @returns {Staff[]} - The staff with the scholar tag from local storage.
 	 */
 	const staff = JSON.parse(localStorage.getItem("staffWithScholar"));
 	

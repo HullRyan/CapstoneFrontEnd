@@ -8,7 +8,7 @@ import Link from "next/link";
 import ThemeContext from "./ThemeContext";
 
 /**
- * A React component that renders a chart.
+ * A React functional component that renders a chart.
  * @returns A React functional component that renders a chart.
  */
 function Chart() {
@@ -225,7 +225,7 @@ function Chart() {
 	];
 
 	/**
-	 * A function that is called when a chart is clicked, and redirects user based on if control was held.
+	 * A function that is called when a chart is clicked, and redirects user based on if control key was held.
 	 * @param {object} params - the parameters of the chart that was clicked.
 	 * @returns None
 	 */

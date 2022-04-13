@@ -60,7 +60,7 @@ function LoadingScreen() {
 	}, []);
 
 	/**
-	 * A list of svg data paths for the symbol shapes, all styled and retrieved from the University of North Carolina at Charlotte.
+	 * A list of svg data paths for the symbol shapes, all styles based on and retrieved from the University of North Carolina at Charlotte.
 	 * @returns {string[]} - A list of svg data paths for the symbol shapes.
 	 */
 	const paths = [
