@@ -98,15 +98,6 @@ input:checked + .slider {
 	background-position: center;
 	background-size: cover;
 }
-.header {
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
-	align-items: center;
-	padding: 1rem;
-	outline: 4px solid;
-	outline-color: var(--color-third);
-}
 .title {
 	font-family: "Bebas Neue", Arial, sans-serif;
 	font-weight: 600;
