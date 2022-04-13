@@ -3,14 +3,14 @@
  * @author Seth Adams <sadams65@uncc.edu>
  */
 
-import Head from "next/head";
-import Scroll from "../components/ScrollText";
 import LoadingScreen from "../components/LoadingScreen";
 import Image from "next/image";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
-import Link from "next/link";
 
+/**
+ * The home page of the site.
+ */
 export default function Home() {
 	return (
 		<div>

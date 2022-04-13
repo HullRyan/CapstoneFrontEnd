@@ -7,22 +7,51 @@ import React, { useEffect, useContext, useState, useRef } from "react";
 import Link from "next/link";
 import ThemeContext from "./ThemeContext";
 
+/**
+ * A React component that renders a chart.
+ * @returns A React functional component that renders a chart.
+ */
 function Chart() {
+	/**
+	 * A React hook that returns a reference to the echarts instance.
+	 * @returns {React.RefObject<any>} - a reference to the echarts instance.
+	 */
 	const echarts_react = useRef(null);
 
+	/**
+	 * A function that opens and closes the modal window.
+	 * @param {boolean} [open=true] - whether or not the modal should be open.
+	 * @returns None
+	 */
 	const [modalOpen, setModalOpen] = useState(true);
 
+	/**
+	 * Closes the modal.
+	 * @returns None
+	 */
 	function closeModal() {
 		setModalOpen(false);
 	}
 
+	/**
+	 * Gets the data from the local storage and returns it.
+	 * @returns The data from the local storage.
+	 */
 	if (typeof window !== "undefined") {
 		var data = JSON.parse(localStorage.getItem("school"));
 		var dataPath = data.children;
 	}
 
+	/**
+	 * A hook that returns the current theme.
+	 * @returns theme - The current theme in use for the application.
+	 */
 	const theme = useContext(ThemeContext);
 
+	/**
+	 * Returns the level options for the echarts instance.
+	 * @returns The level options for the echarts instance.
+	 */
 	function getLevelOption() {
 		return [
 			{
@@ -53,6 +82,10 @@ function Chart() {
 		];
 	}
 
+	/**
+	 * An array of options for echarts instance.
+	 * @returns None
+	 */
 	const options = [
 		{
 			backgroundColor: "transparent",
@@ -191,6 +224,11 @@ function Chart() {
 		},
 	];
 
+	/**
+	 * A function that is called when a chart is clicked, and redirects user based on if control was held.
+	 * @param {object} params - the parameters of the chart that was clicked.
+	 * @returns None
+	 */
 	const onChartClick = (params) => {
 		console.log("Chart clicked", params);
 		if (params.event.event.ctrlKey) {
@@ -201,6 +239,10 @@ function Chart() {
 		}
 	};
 
+	/**
+	 * A map of event handlers for the chart.
+	 * @type {Object}
+	 */
 	const onEvents = {
 		click: onChartClick,
 	};

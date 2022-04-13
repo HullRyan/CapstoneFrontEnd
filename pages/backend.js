@@ -4,9 +4,6 @@
  * @author Seth Adams <sadams65@uncc.edu>
  */
 
- import Head from "next/head";
- import Scroll from "../components/ScrollText";
- import LoadingScreen from "../components/LoadingScreen";
  import Image from "next/image";
 
  export default function Backend(){
@@ -133,7 +130,7 @@
                         }
                         .text {
                             display: flex;
-                            justifu-content: center;
+                            justify-content: center;
                             align-items: center;
                             justify-content: center;
                         }

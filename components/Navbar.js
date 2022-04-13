@@ -7,7 +7,16 @@ import { useState } from "react";
 import ToggleTheme from "./ToggleTheme";
 import { IoMdMenu } from "react-icons/io";
 
+/**
+ * The Navbar component.
+ * @returns A React functional component.
+ */
 export default function Navbar() {
+	
+	/**
+	 * A custom hook that returns a boolean value that represents whether the menu is open.
+	 * @returns {[boolean, Function]} - A tuple containing the current state of the menu and a function that can be used to set the state.
+	 */
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -31,7 +40,7 @@ export default function Navbar() {
 				</span>
 			</div>
 			<div className="header-small">
-				<div className="sidemenu-button">
+				<div className="drawer-button">
 					<IoMdMenu size={32} onClick={() => setIsOpen(!isOpen)} />
 				</div>
 				<span className="title">PROJECT GEMINI</span>
@@ -39,30 +48,39 @@ export default function Navbar() {
 					<ToggleTheme />
 				</span>
 			</div>
-			<div className={`sidemenu ${isOpen ? "open" : "offscreen"}`}>
+			<div className={`drawer ${isOpen ? "open" : "offscreen"}`}>
 				<div className="drawer-links">
 					<Link href="/">
-						<a onClick={() => setIsOpen(false)} className="header-item">Home</a>
+						<a onClick={() => setIsOpen(false)} className="header-item">
+							Home
+						</a>
 					</Link>
 					<Link href="/data">
-						<a onClick={() => setIsOpen(false)} className="header-item">Data</a>
+						<a onClick={() => setIsOpen(false)} className="header-item">
+							Data
+						</a>
 					</Link>
 					<Link href="/charts">
-						<a onClick={() => setIsOpen(false)} className="header-item">Charts</a>
+						<a onClick={() => setIsOpen(false)} className="header-item">
+							Charts
+						</a>
 					</Link>
 					<Link href="/backend">
-						<a onClick={() => setIsOpen(false)} className="header-item">Back-End</a>
+						<a onClick={() => setIsOpen(false)} className="header-item">
+							Back-End
+						</a>
 					</Link>
 				</div>
 			</div>
 			<div
-				className={`sidemenu-background  ${
+				className={`drawer-background  ${
 					isOpen ? "background-open" : "background-offscreen"
-				}`} onClick={() => setIsOpen(false)}>
-			</div>
+				}`}
+				onClick={() => setIsOpen(false)}
+			></div>
 			<style jsx>
 				{`
-					.sidemenu {
+					.drawer {
 						position: fixed;
 						display: flex;
 						flex-direction: column;
@@ -75,7 +93,7 @@ export default function Navbar() {
 						transition: all 0.25s ease-out;
 						opacity: 1;
 					}
-					.sidemenu-background {
+					.drawer-background {
 						position: fixed;
 						top: 0;
 						left: 0;
@@ -98,8 +116,8 @@ export default function Navbar() {
 					}
 					.offscreen {
 						left: -100%;
-          				opacity: 0;
-					} 
+						opacity: 0;
+					}
 					.header-big {
 						display: flex;
 						justify-content: space-between;
@@ -118,10 +136,10 @@ export default function Navbar() {
 						outline: 4px solid;
 						outline-color: var(--color-third);
 					}
-					.sidemenu-button {
+					.drawer-button {
 						cursor: pointer;
 					}
-					.sidemenu-button:hover {
+					.drawer-button:hover {
 						color: var(--color-accent);
 					}
 					.drawer-links {

@@ -10,9 +10,18 @@ import { ThemeProvider } from "../components/ThemeContext";
 
 function App({ Component, pageProps }) {
 	//State to hold if Staff and School JSONs are loaded
+
+	/**
+	 * A hook that sets the state to hold if Staff and School JSONs are loaded.
+	 * @param {boolean} loaded - the state of the loaded state.
+	 * @returns None
+	 */
 	const [loaded, setLoaded] = useState(false);
 
-	//Check to see if School and Staff data is fetched and available in localStorage on initial load into app
+	/**
+	 * Fetches the school and staff data from the API and stores it in localStorage.
+	 * @returns None
+	 */
 	useEffect(() => {
 		if (localStorage.getItem("staffWithScholar") == null) {
 			//Fetch both files that are used in project
@@ -35,10 +44,6 @@ function App({ Component, pageProps }) {
 				});
 		} else setLoaded(true);
 	}, []);
-
-	useEffect(() => { 
-		
-	}, [])
 
 	return (
 		<ThemeProvider>

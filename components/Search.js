@@ -7,30 +7,60 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Search() {
-	//Gets staff data from localStorage
-	const staff = JSON.parse(localStorage.getItem("staffWithScholar"));
 
-	//React state for filtered staff
+	/**
+	 * Get the staff with the scholar tag.
+	 * @returns {Staff[]} - The staff with the scholar tag.
+	 */
+	const staff = JSON.parse(localStorage.getItem("staffWithScholar"));
+	
+	/**
+	 * A hook that returns the search term and sets the search term.
+	 * @returns [searchTerm, setSearchTerm]
+	 */
 	const [searchTerm, setSearchTerm] = useState("");
-	//React state for modal showing
+	
+	/**
+	 * A custom hook that returns a boolean value that determines whether the modal should be shown.
+	 * @returns {boolean} - Whether the modal should be shown.
+	 */
 	const [showModal, setShowModal] = useState(false);
-	//React state for modal data
+	
+	/**
+	 * A hook that sets the active object.
+	 * @param {null | object} activeObject - The object to set as active.
+	 * @returns None
+	 */
 	const [activeObject, setActiveObject] = useState(null);
 	
-	function getResultConatinerClass(e) {
-		if(activeObject != null) {
+	/**
+	 * Returns the class name for the result container based on whether or not the element is active.
+	 * @param {Element} e - the element to check for active status.
+	 * @returns {string} - the class name for the result container based on whether or not the element is active.
+	 */
+	function getResultContainerClass(e) {
+		if (activeObject != null) {
 			return e.name === activeObject.e.name
-			? "resultContainer-active"
-			: "resultContainer-inactive";
+				? "resultContainer-active"
+				: "resultContainer-inactive";
 		}
 		return "resultContainer-inactive";
 	}
-
+	
+	/**
+	 * Returns the class name for the results container based on whether the modal is active or not.
+	 * @returns {string} - the class name for the results container based on whether the modal is active or not.
+	 */
 	function getClass() {
 		return showModal === true
 			? "results-container active"
 			: "results-container inactive";
 	}
+	
+	/**
+	 * Returns the class name for the modal container.
+	 * @returns {string} The class name for the modal container.
+	 */
 	function getModalContainerClass() {
 		return showModal === true ? "modal-active" : "modal-inactive";
 	}
@@ -202,7 +232,7 @@ export default function Search() {
 					<div>Interests</div>
 				</div>
 				<div className="results-container labels big-screen">
-					<div className={'resultContainer'}>
+					<div className={"resultContainer"}>
 						<div className="personContainer">
 							<div>Name</div>
 							<div>College</div>
@@ -222,9 +252,9 @@ export default function Search() {
 							return (
 								<div
 									key={i}
-									className={"resultContainer " + getResultConatinerClass(e)}
+									className={"resultContainer " + getResultContainerClass(e)}
 									onClick={() => {
-										setActiveObject({e});
+										setActiveObject({ e });
 										setShowModal(true);
 									}}
 								>
