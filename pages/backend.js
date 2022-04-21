@@ -18,7 +18,7 @@ export default function Backend() {
 					allow="autoplay"
 				></iframe>
 			</div>
-			<div className="big title accent text">Project Document</div>
+			<div className="big title accent text">Document</div>
 			<div className="backend-container">
 				<iframe
 					src="https://drive.google.com/file/d/1036be-M_JZcKqpo__k-AeRSHPlGvPP7N/preview"
@@ -45,6 +45,10 @@ export default function Backend() {
 						margin-bottom: 20px;
 						margin-left: auto;
 						margin-right: auto;
+					}
+					.video-container iframe {
+						max-width: 100%;
+						
 					}
 					.backend-container {
 						height: 70%;
