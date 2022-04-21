@@ -8,7 +8,17 @@ import Image from "next/image";
 
 export default function Backend() {
 	return (
-		<div>
+		<>
+			<div className="video-container">
+				<div className="big title accent">Project Pitch</div>
+				<iframe
+					src="https://drive.google.com/file/d/1nGjPX7u8r3OY_AMT5IP31lIt9AH--S8P/preview"
+					width="640"
+					height="480"
+					allow="autoplay"
+				></iframe>
+			</div>
+			<div className="big title accent text">Project Document</div>
 			<div className="backend-container">
 				<iframe
 					src="https://drive.google.com/file/d/1036be-M_JZcKqpo__k-AeRSHPlGvPP7N/preview"
@@ -26,22 +36,24 @@ export default function Backend() {
 
 			<style jsx>
 				{`
-					.backend-container {
-						height: 80%;
-						max-height: 1024px;
-						width: 80%;
-						max-width: 791px;
-						overflow: none;
-						display: block;
+					.video-container {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						margin-top: 20px;
+						margin-bottom: 20px;
 						margin-left: auto;
 						margin-right: auto;
-						border: 8px solid black;
-						border-radius: 5px;
-						aspect-ratio: 791 / 1024;
 					}
-					.backend-container img {
-						width: 100%;
-						object-fit: contain;
+					.backend-container {
+						height: 70%;
+						max-width: 1200px;
+						overflow: none;
+						margin-left: auto;
+						margin-right: auto;
+						margin-bottom: 20px;
+						overflow: none;
 					}
 					.text {
 						display: flex;
@@ -51,6 +63,6 @@ export default function Backend() {
 					}
 				`}
 			</style>
-		</div>
+		</>
 	);
 }
