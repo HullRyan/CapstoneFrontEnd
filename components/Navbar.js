@@ -26,14 +26,14 @@ export default function Navbar() {
 				<Link href="/">
 					<a className="header-item">Home</a>
 				</Link>
+				<Link href="/backend">
+					<a className="header-item">Back-End</a>
+				</Link>
 				<Link href="/data">
 					<a className="header-item">Data</a>
 				</Link>
 				<Link href="/charts">
 					<a className="header-item">Charts</a>
-				</Link>
-				<Link href="/backend">
-					<a className="header-item">Back-End</a>
 				</Link>
 				<span className="header-item right">
 					<ToggleTheme />
@@ -55,6 +55,11 @@ export default function Navbar() {
 							Home
 						</a>
 					</Link>
+					<Link href="/backend">
+						<a onClick={() => setIsOpen(false)} className="header-item">
+							Back-End
+						</a>
+					</Link>
 					<Link href="/data">
 						<a onClick={() => setIsOpen(false)} className="header-item">
 							Data
@@ -63,11 +68,6 @@ export default function Navbar() {
 					<Link href="/charts">
 						<a onClick={() => setIsOpen(false)} className="header-item">
 							Charts
-						</a>
-					</Link>
-					<Link href="/backend">
-						<a onClick={() => setIsOpen(false)} className="header-item">
-							Back-End
 						</a>
 					</Link>
 				</div>
