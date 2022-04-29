@@ -140,9 +140,9 @@ Distributed under the MIT License
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ryan Hull - hull.ryanc@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/HullRyan/CapstoneFrontEnd](https://github.com/HullRyan/CapstoneFrontEnd)
 
 <p align="right"><a href="#top">back to top</a></p>
 
