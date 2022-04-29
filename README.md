@@ -1,6 +1,7 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -63,8 +64,6 @@ What we provide:
 
 Of course, this project is built for our home here at UNC at Charlotte, but we hope to provide insight for other solutions for other organizations and data sets.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Built With
 
 #### Front-End
@@ -102,7 +101,7 @@ Follow this quick guide to run this project locally
    git clone https://github.com/HullRyan/CapstoneFrontEnd
    ```
 
-3. Install NPM packages
+2. Install NPM packages
 
    ```sh
    npm install
@@ -113,8 +112,6 @@ Follow this quick guide to run this project locally
    ```sh
    npm run dev
    ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
@@ -133,15 +130,11 @@ Follow this quick guide to run this project locally
 
 [![Charts Page Screenshot][charts-screenshot]](https://capstone-front-end-lime.vercel.app/charts)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
@@ -151,7 +144,7 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
