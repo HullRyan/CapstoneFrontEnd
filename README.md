@@ -81,7 +81,7 @@ Of course, this project is built for our home here at UNC at Charlotte, but we h
 - [Pandas](https://pandas.pydata.org/)
 - [Scholarly](https://scholarly.readthedocs.io/en/stable/quickstart.html)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 <!-- GETTING STARTED -->
 
